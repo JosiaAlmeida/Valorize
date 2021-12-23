@@ -7,6 +7,8 @@ import { ensureAdmin } from "./middlewares/ensureAdmin";
 import { ensureAuthenticated } from "./middlewares/ensureAuthenticated";
 import { ListUserReceiveController } from "./controllers/ListUserReceiveController";
 import { ListUserSenderController } from "./controllers/ListUserSenderController";
+import { ListTagController } from "./controllers/ListTagController";
+import { ListUserController } from "./controllers/ListUserController";
 
 const router = Router()
 
@@ -16,9 +18,13 @@ const AuthController = new AuthenticateUserController()
 const createComplimentController = new CreateComplimentController()
 const listUserReceiveController = new ListUserReceiveController()
 const listUserSendController = new ListUserSenderController()
+const listTagsController = new ListTagController()
+const listUserController = new ListUserController
 
 router.get('/compliments/receive',ensureAuthenticated, listUserReceiveController.handle)
 router.get('/compliments/send',ensureAuthenticated, listUserSendController.handle)
+router.get('/tags', ensureAuthenticated, listTagsController.handle)
+router.get('/user', ensureAuthenticated, listUserController.handle)
 
 router.post('/user', createUserController.handle)
 router.post('/login', AuthController.handle)

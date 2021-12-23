@@ -1,5 +1,5 @@
 Arguments: 
-  /home/almeida/.nvm/versions/node/v16.13.1/bin/node /home/almeida/.nvm/versions/node/v16.13.1/bin/yarn add typeorm migration:create -n createCompliments
+  /home/almeida/.nvm/versions/node/v16.13.1/bin/node /home/almeida/.nvm/versions/node/v16.13.1/bin/yarn add @types/class-transformer -D
 
 PATH: 
   /home/almeida/.nvm/versions/node/v16.13.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,17 +14,17 @@ Platform:
   linux x64
 
 Trace: 
-  Error: migration:create: Invalid protocol: migration:
-      at Request.module.exports.Request.init (/home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:141152:31)
-      at new Request (/home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:140825:8)
-      at request (/home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:137731:10)
-      at RequestManager.execute (/home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:67081:15)
-      at RequestManager.shiftQueue (/home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:67119:10)
-      at /home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:66788:13
-      at new Promise (<anonymous>)
-      at new F (/home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:5301:28)
-      at RequestManager.request (/home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:66786:19)
-      at NpmRegistry.<anonymous> (/home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:31747:42)
+  Error: https://registry.npmjs.org/@types%2fclass-transformer: Not found
+      at Request.params.callback [as _callback] (/home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:67029:18)
+      at Request.self.callback (/home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (/home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (/home/almeida/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1343:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {
@@ -49,6 +49,7 @@ npm manifest:
     },
     "dependencies": {
       "bcryptjs": "^2.4.3",
+      "class-transformer": "^0.5.1",
       "express-async-error": "^0.0.2",
       "jsonwebtoken": "^8.5.1",
       "reflect-metadata": "^0.1.13",
@@ -398,6 +399,11 @@ Lockfile:
     version "1.1.4"
     resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.4.tgz#6fc9d7b42d32a583596337666e7d08084da2cc6b"
     integrity sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==
+  
+  class-transformer@^0.5.1:
+    version "0.5.1"
+    resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.5.1.tgz#24147d5dffd2a6cea930a3250a677addf96ab336"
+    integrity sha512-SQa1Ws6hUbfC98vKGxZH3KFY0Y1lm5Zm0SY8XX9zbK7FJCyVEac3ATW0RIpwzW+oOfmHE5PMPufDG9hCfoEOMw==
   
   cli-highlight@^2.1.11:
     version "2.1.11"
