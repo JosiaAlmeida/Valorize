@@ -1,0 +1,25 @@
+{
+  "name": "Valorize",
+  "version": "1.0.0",
+  "description": "Valoriar membros",
+  "main": "app.js",
+  "author": "Josia Almeida",
+  "license": "MIT",
+  "scripts": {
+    "go": "ts-node-dev src/app.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/uuid": "^8.3.3",
+    "express": "^4.17.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.2",
+    "typeorm": "^0.2.41",
+    "uuid": "^8.3.2"
+  }
+}
