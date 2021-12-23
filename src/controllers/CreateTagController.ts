@@ -8,7 +8,7 @@ class CreateTagController{
 
         const TagService = new CreateTagServices()
 
-        const tag = await TagService.execute({name})
+        const tag = await TagService.execute(name)
 
         return res.json(tag)
 

@@ -1,15 +1,12 @@
 import { getCustomRepository } from 'typeorm';
 import { TagRepositories } from '../repositories/TagRepositories';
 
-interface ITag{
-    name: string
-}
 
 class CreateTagServices{
-    async execute({name}:ITag){
+    async execute(name :string){
         const tagRepository = getCustomRepository(TagRepositories)
 
-        if(!name) throw new Error("Name incorrect")
+        if(!name) throw new Error("Name empty")
 
         const tagAlreadyExists = await tagRepository.findOne({
             name
