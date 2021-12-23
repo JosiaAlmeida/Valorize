@@ -18,4 +18,10 @@
 
 -   Cadastro de Elogios
 
-[]  Não é permitido um usuario cadastrar um eleogio para si
+[x]  Não é permitido um usuario cadastrar um eleogio para si
+
+##  Como Executar
+
+-   yarn
+-   yarn typeorm migrate:run
+-   yarn go

@@ -34,6 +34,6 @@ class AuthenticateUserService{
             subject: userExists.id,
             expiresIn: "1d"
         })
-        return userExists
+        return ({userExists,token})
     }
 }export {AuthenticateUserService}
