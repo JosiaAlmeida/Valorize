@@ -10,11 +10,11 @@
 
 -   Cadastro de TAG
 
-[]  Não é permitido cadastrar mais de uma tag com o mesmo nome
+[x]  Não é permitido cadastrar mais de uma tag com o mesmo nome
 
-[]  Não é permitido cadastarar tag sem nome
+[x]  Não é permitido cadastarar tag sem nome
 
-[]  Não é permitido cadastro por usuario que não sejam admin
+[x]  Não é permitido cadastro por usuario que não sejam admin
 
 -   Cadastro de Elogios
 
