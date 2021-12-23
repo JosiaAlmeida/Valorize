@@ -17,6 +17,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
+    "express-async-error": "^0.0.2",
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.0.2",
     "typeorm": "^0.2.41",
